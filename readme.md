@@ -9,9 +9,9 @@ If you do not have / want composer on your local system, copy everything in the 
 
 ## Installation
 
-Add ```"svpernova09/homesteadskeleton": "1.0.*``` to your project's ```composer.json``` in require-dev.
+Add ```"svpernova09/homesteadskeleton": "1.0.*"``` to your project's ```composer.json``` in require-dev.
 Run ```composer update```
-Add to ```app/Providers/AppServiceProvider.php``` register() method:
+Add to the ```register()``` method in ```app/Providers/AppServiceProvider.php```:
 
 ```
 if ($this->app->environment() == 'local') {
